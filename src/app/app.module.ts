@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 import { MatButtonModule, MatCheckboxModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { Api } from '../services/api';
 import { AppRoutingModule, websiteComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -20,9 +21,12 @@ import { RouterModule } from '@angular/router';
         MatMenuModule,
         MatIconModule,
         BrowserAnimationsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        HttpModule
     ],
-    providers: [],
+    providers: [
+        Api
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
