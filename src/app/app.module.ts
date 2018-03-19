@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { MatButtonModule, MatCheckboxModule, MatIconModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatIconModule, MatMenuModule, MatToolbarModule, MatCardModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -22,7 +22,8 @@ import { AppComponent } from './app.component';
         MatIconModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        HttpModule
+        HttpModule,
+        MatCardModule
     ],
     providers: [
         Api

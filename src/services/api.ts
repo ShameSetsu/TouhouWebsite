@@ -3,8 +3,8 @@ import { Http, RequestOptionsArgs, Response, URLSearchParams } from '@angular/ht
 
 @Injectable()
 export class Api {
-    // baseUrl: string = 'http://85.169.114.204:3000/api'; // RASBERRY HOST
-    baseUrl: string = 'http://localhost:3000/api'; // LOCAL
+    baseUrl: string = 'http://85.169.114.204:3000/api'; // RASBERRY HOST
+    // baseUrl: string = 'http://localhost:3000/api'; // LOCAL
 
     constructor(private http: Http) {}
 

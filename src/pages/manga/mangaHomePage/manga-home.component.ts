@@ -10,13 +10,13 @@ import { MangaService } from '../../../services/mangaService';
 })
 export class MangaHomePage {
 
-    manga: Array<MangaInfo>;
+    mangas: Array<MangaInfo>;
 
     constructor(private mangaService: MangaService){
         this.mangaService.getManga(1)
             .then(res=>{
                 console.log('mangas:', res);
-                this.manga = res;
+                this.mangas = res;
             })
             .catch(err=>{
                 console.error('manga error', err);
